@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lawvia - Legal Document Translator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Lawvia</h1>
+    <p>Translating law into clarity.</p>
+  </header>
+
+  <main>
+    <section class="translator">
+      <textarea id="inputText" placeholder="Paste your legal text here..."></textarea>
+      <select id="mode">
+        <option value="toLegalese">Translate into Legalese</option>
+        <option value="toPlain">Translate into Plain English</option>
+      </select>
+      <button onclick="translateText()">Translate</button>
+      <textarea id="outputText" placeholder="Your translation will appear here..." readonly></textarea>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Lawvia. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
